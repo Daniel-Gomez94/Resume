@@ -1,7 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects – Daniel Gomez</title>
-  <link rel="stylesheet" href="style.css?v=11">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 2 – City Growth Management Plan</title>
+  <link rel="stylesheet" href="style.css?v=19" />
 </head>
+
+<body>
+  <!-- ===== TOP HEADER (mirrors resume header) ===== -->
+  <div class="container">
+    <header class="top profile" role="banner">
+      <section class="top_container">
+        <div>
+          <!-- Project title styled like your name -->
+          <h1 class="top_resume_name">
+            <span class="top_firstName">Project</span>
+            <span class="top_lastName">Two</span>
+          </h1>
+          <p class="top_title">Preserving Osteen’s Rural Character Through Strategic Planning</p>
+        </div>
+      </section>
+    </header>
+  </div>
+
+  <!-- ===== MAIN CONTENT (two-column layout like resume) ===== -->
+  <div class="container">
+    <!-- Left column: Description + Skills (like sidebar) -->
+    <aside class="left_sidebar">
+      <section class="project_details">
+        <h2 class="title">Description</h2>
+        <p class="inner_bullet">
+          This project developed a small area plan to preserve 
+          the rural identity of Osteen, FL. A professional planning role 
+          was taken to design land use, growth management, housing,
+          placemaking, and transportation strategies, culminating in a 
+          written plan, presentation, and map.
+        </p>
+      </section>
+
+      <section class="project_skills">
+        <h2 id="skills_heading" class="title">Skills Learned</h2>
+        <ul>
+          <li class="inner_bullet">Urban and Regional Planning – Gained practical 
+            experience in designing land use and zoning strategies based on real-world 
+            planning challenges.
+          </li>
+          <li class="inner_bullet">Policy Writing – Created actionable policy strategies 
+            including conservation easements, growth management boundaries, and zoning 
+            code proposals.
+          </li>
+          <li class="inner_bullet">Supported map-based presentations and helped visualize 
+            planning boundaries like the GMB.
+          </li>
+          <li class="inner_bullet">Sustainability and Resource Planning – Focused on aquifer 
+            recharge, stormwater management, and rural preservation.
+          </li>
+          <li class="inner_bullet">Community Engagement Thinking – Designed public meeting 
+            strategies and considered stakeholder inclusion in policy implementation.
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Right column: Screenshots -->
+    <main class="right_main">
+      <h2 class="title">Screenshots</h2>
+
+      <!-- Use figure/figcaption for semantics; images are set via CSS backgrounds -->
+      <section class="project_gallery">
+        <figure class="screenshot p3">
+          <figcaption>Map 1</figcaption>
+        </figure>
+        <figure class="screenshot p4">
+          <figcaption>Map 2</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== FOOTER NAV BACK ===== -->
+  <footer>
+    <nav class="back_info">
+      <p><a class="back_link" href="index.html">← Back to Resume</a></p>
+    </nav>
+  </footer>
+</body>
+</html>

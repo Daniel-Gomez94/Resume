@@ -1,7 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects – Daniel Gomez</title>
-  <link rel="stylesheet" href="style.css?v=11">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 1 – Contact Manager Website</title>
+  <link rel="stylesheet" href="style.css?v=19" />
 </head>
+
+<body>
+  <!-- ===== TOP HEADER (mirrors resume header) ===== -->
+  <div class="container">
+    <header class="top profile" role="banner">
+      <section class="top_container">
+        <div>
+          <!-- Project title styled like your name -->
+          <h1 class="top_resume_name">
+            <span class="top_firstName">Project</span>
+            <span class="top_lastName">One</span>
+          </h1>
+          <p class="top_title">Contact Manager Website</p>
+        </div>
+      </section>
+    </header>
+  </div>
+
+  <!-- ===== MAIN CONTENT (two-column layout like resume) ===== -->
+  <div class="container">
+    <!-- Left column: Description + Skills (like sidebar) -->
+    <aside class="left_sidebar">
+      <section class="project_details">
+        <h2 class="title">Description</h2>
+        <p class="inner_bullet">
+          This project was a full-stack web application for managing personal contacts.
+          It used a LAMP stack (Linux, Apache, MySQL, PHP) deployed on DigitalOcean.
+          The app included user authentication, CRUD functionality for contacts,
+          and integration with SwaggerHub for documenting the API endpoints.
+        </p>
+      </section>
+
+      <section class="project_skills">
+        <h2 id="skills_heading" class="title">Skills Learned</h2>
+        <ul>
+          <li class="inner_bullet">MySQL database design and CRUD queries</li>
+          <li class="inner_bullet">PHP for backend API endpoints</li>
+          <li class="inner_bullet">HTML, CSS, and JavaScript for frontend</li>
+          <li class="inner_bullet">Deployment on DigitalOcean with domain setup</li>
+          <li class="inner_bullet">API documentation with SwaggerHub</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Right column: Screenshots -->
+    <main class="right_main">
+      <h2 class="title">Screenshots</h2>
+
+      <!-- Use figure/figcaption for semantics; images are set via CSS backgrounds -->
+      <section class="project_gallery">
+        <figure class="screenshot p1">
+          <figcaption>Login Page</figcaption>
+        </figure>
+        <figure class="screenshot p2">
+          <figcaption>Dashboard</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== FOOTER NAV BACK ===== -->
+  <footer>
+    <nav class="back_info">
+      <p><a class="back_link" href="index.html">← Back to Resume</a></p>
+    </nav>
+  </footer>
+</body>
+</html>

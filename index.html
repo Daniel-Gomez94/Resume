@@ -6,35 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="Chrome, Mozilla">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="style.css?v=12">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css?v=19">
+
+    <!-- Font for map-marker icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
   <div class="container">
 
-    <!----- TOP SECTION ----->
+    <!-- ===================== TOP SECTION ===================== -->
 
     <header class="top profile">
       <section class="top_container">
         <div class="top_alignment">
           <img src="Images/ResumePicture.jpg" 
                alt="Daniel Gomez headshot"
-               width="200" height="250">
+               width="200" 
+               height="250"/>
         </div>
         <div>
           <h1 class="top_resume_name">
             <span class="top_firstName">Daniel</span>
             <span class="top_lastName">Gomez</span>
           </h1>
-          <p class="top_title">Software Developer</p>
-          <p class="top_summary_statement">
-            U.S. Air Force veteran with a
-            background in computer science
-            and urban planning, focused on 
-            leveraging sustainable design 
-            to drive community growth and 
-            development.
+
+          <p class="top_title">Software Developer | Urban Planner</p>
+          <!-- Location with upside-down raindrop pin -->
+          <p class="top_location">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i> 
+            Orlando, FL
           </p>
+
+          <p class="top_summary_statement">
+            U.S. Air Force veteran with a background in computer science
+            and urban planning, focused on leveraging sustainable design 
+            to drive community growth and development.
+          </p>
+
           <a class="downloadButton" href="./Current Resume.pdf" download="Resume.pdf">
             Download Resume
           </a>
@@ -42,156 +54,166 @@
       </section>
     </header>
 
-    <!----- LEFT SIDE ----->
+    <!-- ===================== LEFT SIDEBAR ===================== -->
 
     <aside class="left_sidebar">
 
       <!-- Education -->
-      <section class="education">
-        <h1 class="title">Education</h1>
+      <section class="skills" aria-labelledby="skills_heading">
+        <h2 id="skills_heading" class="title">Skills & Interests</h2>
         <ul>
-          <li class="left_subheading">University of Central Florida   Aug 2023 – present</li>
-          <ul>
-            <li class="inner_bullet">Major: Computer Science<ul>
-              </ul>
-            </li>
-            <li class="inner_bullet">Minors: Environmental Studies | Urban & Regional Planning<ul>
-              </ul>
-            </li>
-          </ul>
-        </ul>
-      </section>
-
-      <!----- Skills & Interests ----->
-      <section class="skills">
-        <h1 class="title">Skills & Interests</h1>
-        <ul>
-          <li class="left_subheading">Languages:</li>
+          <li class="left_subheading">
+            Languages
             <ul>
               <li class="inner_bullet">English (Fluent)</li>
               <li class="inner_bullet">Spanish (Fluent)</li>
             </ul>
-          <li class="left_subheading">Programming:</li>
+          </li>
+
+          <li class="left_subheading">
+            Programming
             <ul>
               <li class="inner_bullet">Java</li>
               <li class="inner_bullet">Python</li>
               <li class="inner_bullet">C</li>
               <li class="inner_bullet">HTML</li>
+              <li class="inner_bullet">CSS</li>
             </ul>
-          <li class="left_subheading">Tools:</li>
+          </li>
+
+          <li class="left_subheading">
+            Tools
             <ul>
               <li class="inner_bullet">Git</li>
               <li class="inner_bullet">Qualtrics</li>
               <li class="inner_bullet">Google & Microsoft Suite</li>
               <li class="inner_bullet">ArcGIS</li>
             </ul>
-          <li class="left_subheading">Certifications:</li>
+          </li>
+
+          <li class="left_subheading">
+            Certifications
             <ul>
               <li class="inner_bullet">AWS Cloud Foundations</li>
               <li class="inner_bullet">AWS Cloud Security Foundations</li>
             </ul>
+          </li>
         </ul>
       </section>
 
       <!----- Military Achievements ----->
       <section class="Military_achievenments">
-        <h1 class="title">Military Achievements</h1>
+        <h3 class="title">Military Awards</h3>
         <ul>
           <li class="left_achievement">Maintenance Professional of the Quarter</li>
-          <li class="left_achievement">Airmen of the Quarter</li>
-          <li class="left_achievement">The Air Force Achievement Medal</li>
+          <li class="left_achievement">Airman of the Quarter</li>
+          <li class="left_achievement">Air Force Achievement Medal</li>
         </ul>
       </section>
 
-            <!----- Projects ----->
+      <!----- Projects overview + buttons ----->
       <section class="Projects">
-        <h1 class="title">Projects</h1>
+        <h2 class="title">Projects</h2>
         <ul>
-          <li class="project">Project 1 - Contact manager website to store contatcs<br></li>
-          <a class="button_Project1" href="project1.html">View more</a>
-          <li class="project">Project 2 - Insert description here<br></li>
-          <a class="button_Project2" href="project2.html">View more</a>
+          <li class="project">Project 1 - Contact manager website to store contatcs</li>
+          <li class="project">Project 2 - Insert description here</li>
+
+          <!-- Buttons container to avoid floats and keep them aligned -->
+          <nav class="project_buttons">
+            <a class="button_Project1" href="./project1.html">View Project 1</a>
+            <a class="button_Project2" href="./project2.html">View Project 2</a>
+          </nav>
         </ul>
       </section>
     </aside>
 
-    <!----- RIGHT SIDE ----->
+    <!-- ===================== RIGHT MAIN ===================== -->
     <main class="right_main">
 
       <!-- Work Experience -->
       <section class="Work_experience">
-        <h1 class="title">Work Experience</h1>
-          <ul class="work_title">Seminole County<br>
-            <p class="location">Sanford, FL</p>
-            <p class="date">July 1 - Present</p>
-            <li class="right_subheading">Transit Intern</li>
-              <ul>
-                <li class="inner_bullet">
-                  Utilized ArcGIS and coding languages 
-                  such as python to gather, organize, and filter crucial data 
-                  used in the creation on new public transit program to determine 
-                  ideal operational zones and rates of transit system.
-                </li>
-                <li class="inner_bullet">
-                  Performed county wide outreach to local businesses and 
-                  residents to establish partnerships with the primary goal 
-                  of advertising and informing residents of new transit system.
-                </li>
-              </ul>
+        <h2 class="title">Work Experience</h2>
+
+        <article class="work_title">
+          <h3 class="work_employer">Seminole County</h3>
+          <div class="meta">
+            <span class="location">Sanford, FL</span>
+            <span class="date">July 1 – Present</span>
+          </div>
+          <h4 class="right_subheading">Transit Intern</h4>
+          <ul class="bullets">
+            <li class="inner_bullet">
+              Utilized ArcGIS and coding languages such as Python to gather, organize, and filter crucial
+              data used in the creation of a new public transit program to determine ideal operational
+              zones and rates of the transit system.
+            </li>
+            <li class="inner_bullet">
+              Performed county-wide outreach to local businesses and residents to establish partnerships
+              and inform the public about the new transit system.
+            </li>
           </ul>
-          <ul class="work_title">University of Central Florida Military & Veteran Success Center<br>
-            <p class="location">Orlando, FL</p>
-            <p class="date">March 2023 - Present</p>
-            <li class="right_subheading">Academic Success Coach</li>
-              <ul>
-                <li class="inner_bullet">
-                  Utilized Excel, Qualtrics, and Google tools to track and 
-                  manage over 3,000 students, streamlining academic assistance 
-                  offering personalized strategies for improving academic performance.
-                </li>
-                <li class="inner_bullet">
-                  Developed and led an academic coaching outreach program 
-                  tailored to support student veterans, establishing strong 
-                  referral networks, connecting students with on campus resources 
-                  and support services.
-                </li>
-              </ul>
+        </article>
+
+        <article class="work_title">
+          <h3 class="work_employer">University of Central Florida Military & Veteran Success Center</h3>
+          <div class="meta">
+            <span class="location">Orlando, FL</span>
+            <span class="date">March 2023 – Present</span>
+          </div>
+          <h4 class="right_subheading">Academic Success Coach</h4>
+          <ul class="bullets">
+            <li class="inner_bullet">
+              Utilized Excel, Qualtrics, and Google tools to track and manage over 3,000 students,
+              streamlining academic assistance and offering personalized strategies for improving
+              academic performance.
+            </li>
+            <li class="inner_bullet">
+              Developed and led an academic coaching outreach program tailored to support student
+              veterans, establishing strong referral networks and connecting students with on-campus
+              resources and support services.
+            </li>
           </ul>
-          <ul class="work_title">United States Air Force<br>
-            <p class="location">Hurlburt Field, FL</p>
-            <p class="date">May 2018 - May 2022</p>
-            <li class="right_subheading">Aerospace Maintenance Technician</li>
-              <ul>
-                <li class="inner_bullet">
-                  Directed maintenance of a 15+ (C-130) aircraft fleet, 
-                  ensuring mission readiness while managing assets worth 
-                  over $300M.
-                </li>
-                <li class="inner_bullet">
-                  Overhauled the hazardous material program, achieving 
-                  100% compliance in state and federal inspections.
-                </li>
-              </ul>
+        </article>
+
+        <article class="work_title">
+          <h3 class="work_employer">United States Air Force</h3>
+          <div class="meta">
+            <span class="location">Hurlburt Field, FL</span>
+            <span class="date">May 2018 – May 2022</span>
+          </div>
+          <h4 class="right_subheading">Aerospace Maintenance Technician</h4>
+          <ul class="bullets">
+            <li class="inner_bullet">
+              Directed maintenance of a 15+ C-130 aircraft fleet, ensuring mission readiness while
+              managing assets worth over $300M.
+            </li>
+            <li class="inner_bullet">
+              Overhauled the hazardous material program, achieving 100% compliance in state and
+              federal inspections.
+            </li>
           </ul>
+        </article>
       </section>
 
       <!----- Leadership ----->
       <section class="leadership">
-        <h1 class="title">Leadership & Involvement</h1>
+        <h2 class="title">Leadership & Involvement</h2>
         <ul class="skill_list">
-          <li class="right_subheading">Member, UCF Urban Knights
+          <li class="right_subheading">
+            Member, UCF Urban Knights
             <ul>
               <li class="inner_bullet">
-                Collaborated with urban planners & industry organizations 
-                to explore innovative solutions within communities.
+                Collaborated with urban planners &amp; industry organizations to explore innovative
+                solutions within communities.
               </li>
             </ul>
           </li>
-          <li class="right_subheading">Volunteer, Soldiers to Scholars
+          <li class="right_subheading">
+            Volunteer, Soldiers to Scholars
             <ul>
               <li class="inner_bullet">
-                Supported community initiatives, including facilitating 
-                a Thanksgiving food drive & Vietnam Veteran Memorial.
+                Supported community initiatives, including facilitating a Thanksgiving food drive and the
+                Vietnam Veteran Memorial.
               </li>
             </ul>
           </li>
@@ -199,13 +221,20 @@
       </section>
     </main>
 
-    <!----- BOTTOM PORTION ----->
+        <!-- ===================== FOOTER (CONTACT INFO) ===================== -->
     <footer class="bottom">
-      <small>Contact infor can go here<a href="mailto:you@email.com">you@email.com</a></small>
+      <div class="contact_info">
+        <h2 class="footer_heading">Contact Information</h2>
+        <address>
+          <p>
+            <a href="mailto:danielgomezwork@outlook.com">email: danielgomezwork@outlook.com</a>
+            <a href="https://www.linkedin.com/in/daniel-gomez-3306aa264" target="_blank" rel="noopener noreferrer">
+              Linkedin Profile
+            </a>
+          </p>
+        </address>
+      </div>
     </footer>
   </div>
 </body>
-
-
-
 </html>
