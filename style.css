@@ -27,8 +27,8 @@ body{
     color: var(--text-color);
     /* image repeating on sides */
     background:
-        url("/Images/Building6.png") left top repeat-y,   /* left banner */
-        url("/Images/Building6.png") right top repeat-y,  /* right banner */
+        url("Images/Building6.png") left top repeat-y,   /* left banner */
+        url("Images/Building6.png") right top repeat-y,  /* right banner */
         var(--background-color);                           /* main center */
     background-size: 180px auto, 180px auto, auto; /* banner width */
         
@@ -390,5 +390,6 @@ a{
     background-color: var(--primary-color);
     color: #ffffff;
 }
+
 
 
