@@ -357,12 +357,12 @@ a{
 .screenshot.p2{
     background-image: url("Images/P1.2.png");
 }
-/* third screenshot (login page) */
+/* third screenshot (map 1) */
 .screenshot.p3{
     background-image: url("Images/P2.1.png");
 }
 
-/* fourth screenshot (dashboard) */
+/* fourth screenshot (map 2) */
 .screenshot.p4{
     background-image: url("Images/P2.2.png");
 }
@@ -390,4 +390,5 @@ a{
     background-color: var(--primary-color);
     color: #ffffff;
 }
+
 
