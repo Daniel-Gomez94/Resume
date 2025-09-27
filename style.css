@@ -12,7 +12,7 @@
 :root{
     --primary-color: #745236;    /* accent text / highlight / hover */
     --text-color: #2C3930;       /* body text */
-    --background-color: #DCD7C9; /* main page background */
+    --background-color: #dbd2bc; /* main page background */
     --accent-color: #3F4F44;     /* panels / dark areas */
 }
 
@@ -27,8 +27,8 @@ body{
     color: var(--text-color);
     /* image repeating on sides */
     background:
-        url("/Images/Building3.png") left top repeat-y,   /* left banner */
-        url("/Images/Building3.png") right top repeat-y,  /* right banner */
+        url("/Images/Building6.png") left top repeat-y,   /* left banner */
+        url("/Images/Building6.png") right top repeat-y,  /* right banner */
         var(--background-color);                           /* main center */
     background-size: 180px auto, 180px auto, auto; /* banner width */
         
@@ -336,6 +336,18 @@ a{
     margin: 0;                /* remove default figure margins */ 
 }
 
+/* Used AI here because I had trouble changing the figcaption color */
+.screenshot > figcaption {
+    display: inline-block;
+    margin-top: .5rem;
+    background-color: var(--background-color);   /* <-- white background */
+    color: var(--text-color);    /* use your main text color for contrast */
+    padding: .5rem .75rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
 /* first screenshot (login page) */
 .screenshot.p1{
     background-image: url("Images/P1.1.png");
@@ -378,5 +390,4 @@ a{
     background-color: var(--primary-color);
     color: #ffffff;
 }
-
 
